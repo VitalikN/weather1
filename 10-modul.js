@@ -5,8 +5,8 @@ async function loadWeather(e) {
   //       <img src="img/loading.gif" alt="Loading...">
   //       </div>
   //     `;
-  // const cityName = prompt('uzhhorod', 'uzhhorod');
-  const server = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=uzhhorod&appid=809785e64f1323266f14960cb0aea807`;
+  const cityName = prompt('Uzhhorod, Mukacheve, Kyiv, Lviv');
+  const server = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${cityName}&appid=809785e64f1323266f14960cb0aea807`;
   const response = await fetch(server, {
     method: 'GET',
   });
